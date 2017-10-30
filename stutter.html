@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>stutter.html</title>
+
+</head>
+
+<body>
+
+<h1>Homework 5</h1>
+<h3>CPTR 245</h3>
+<h3>Patrick Dunphy &amp; Charles Lambert</h3>
+<p>Our initial happy path tests sets up the main funcitonality of the program.
+Which in this case is to read a file and check for repeated words.
+Once repeated words are found it returns the words and lines.</p>
+<p><code>java
+  @Test
+    public void testNormalBehavior() throws IOException {
+        assertEquals("Not expected return","nibh ln 7, nostra ln 11, ",
+                Stutter.stut("/home/charlie/School/Fall_2017/Software_Testing/HW/CPTR245HW5/tests/blah.txt"));
+    }</code></p>
+</body>
+</html>
