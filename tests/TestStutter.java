@@ -14,7 +14,7 @@ public class TestStutter {
 
     @Test
     public void testNewBehavior() throws IOException {
-        assertEquals("Not expected return", "amet ln 1, tortor ln 2, ",
-                Stutter.stut("blah2.txt"));
+        assertEquals("Not expected return", "amet ln 1, tortor ln 2, metus ln 2, ",
+                Stutter.stut("/home/charlie/School/Fall_2017/Software_Testing/HW/CPTR245HW5/tests/blah2.txt"));
     }
 }
