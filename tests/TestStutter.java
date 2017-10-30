@@ -11,6 +11,7 @@ public class TestStutter {
 
     @Test
     public void testNewBehavior() {
-        assertEquals("Not expected return", "amet ln 1, tortor ln 2", Stutter.stut("blah2.txt"));
+        assertEquals("Not expected return", "amet ln 1, tortor ln 2",
+                Stutter.stut("blah2.txt"));
     }
 }
