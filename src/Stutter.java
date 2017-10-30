@@ -4,28 +4,34 @@ public class Stutter {
     public Stutter() {
     }
 
-    private static char delimits[] =
-            {'	', ' ', ',', '.', '!', '-', '+', '=', ';', ':',
-                    '?', '&', '{', '}', '\\'};
 
-
-    public static String stut(String filePath) {
+    public static String stut(String filePath) throws IOException {
         FileReader fr = new FileReader(filePath);
         BufferedReader br = new BufferedReader(fr);
-        String line = null;
-    //    StringBuilder output = new StringBuilder("");
+        String line;
         String output = "";
-        char currentChar;
+        String [] lineArray;
         int linecnt = 0;
+        String prevW;
 
         while ((line = br.readLine()) != null) {
             ++linecnt;
-            for (int i = )
-                line.split("\t|\s|\,|\.|\!|\-|\+|\=|\;|\:|\?|\&|\{|\}|\\");
+            lineArray = line.split("\\W+");
+
+            prevW =lineArray[0];
+            for (int i = 1; i < lineArray.length; i++) {
+                if(lineArray[i].equals(prevW)) {
+                    output = output + String.format("%s ln %d, ", lineArray[i], linecnt);
+                }
+                else {
+                    prevW = lineArray[i];
+                }
+            }
         }
 
 
-        return "nibh ln 7, nostra ln 11";
+        return output;
+        //return "nibh ln 7, nostra ln 11";
     }
 
-}
+ }
