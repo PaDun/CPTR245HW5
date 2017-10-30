@@ -13,12 +13,15 @@ public class Stutter {
         FileReader fr = new FileReader(filePath);
         BufferedReader br = new BufferedReader(fr);
         String line = null;
-        StringBuilder output = new StringBuilder("");
+    //    StringBuilder output = new StringBuilder("");
+        String output = "";
+        char currentChar;
         int linecnt = 0;
 
         while ((line = br.readLine()) != null) {
             ++linecnt;
-
+            for (int i = )
+                line.split("\t|\s|\,|\.|\!|\-|\+|\=|\;|\:|\?|\&|\{|\}|\\");
         }
 
 
