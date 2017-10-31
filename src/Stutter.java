@@ -5,7 +5,11 @@ public class Stutter {
     }
 
 
-    public static String stut(String filePath) throws IOException {
+    public static String stut(String filePath) {
+        if(!filePath.substring(filePath.length()-4,filePath.length()).equals(".txt")) {
+            return String.format("%s is not a txt file", filePath);
+        }
+
         try {
             FileReader fr = new FileReader(filePath);
             BufferedReader br = new BufferedReader(fr);
@@ -20,17 +24,20 @@ public class Stutter {
                 ++linecnt;
                 lineArray = line.split("\\W+");
 
-                prevW = lineArray[0];
-                for (int i = 1; i < lineArray.length; i++) {
-                    if (lineArray[i].equals(prevW)) {
-                        output = output + String.format("%s ln %d, ", lineArray[i], linecnt);
-                    } else {
-                        prevW = lineArray[i];
+                if (lineArray.length != 0) {
+                    prevW = lineArray[0];
+                    for (int i = 1; i < lineArray.length; i++) {
+                        if (lineArray[i].equals(prevW)) {
+                            output = output + String.format("%s ln %d, ", lineArray[i], linecnt);
+                            prevW = lineArray[i];
+                        } else {
+                            prevW = lineArray[i];
+                        }
                     }
                 }
             }
 
-            if(linecnt == 0){
+            if(linecnt == 0 || output.length() == 0){
                 return "No Duplicates";
             }
             else {

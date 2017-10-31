@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f765742a-ff50-4218-be46-40ec7d063281" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/blah4.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/CPTR245HW5/battery" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/battery" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CPTR245HW5/Stutter.class" afterPath="$PROJECT_DIR$/out/production/CPTR245HW5/Stutter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/CPTR245HW5/TestStutter.class" afterPath="$PROJECT_DIR$/out/test/CPTR245HW5/TestStutter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/CPTR245HW5/blah2.txt" afterPath="$PROJECT_DIR$/out/test/CPTR245HW5/blah2.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Stutter.java" afterPath="$PROJECT_DIR$/src/Stutter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestStutter.java" afterPath="$PROJECT_DIR$/tests/TestStutter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/blah2.txt" afterPath="$PROJECT_DIR$/tests/blah2.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,24 +22,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49411765">
+    <splitter split-orientation="horizontal" split-proportion="0.5363196">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Stutter.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Stutter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+                <state relative-caret-position="323">
+                  <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="blah.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/blah.txt">
+          <file leaf-file-name="blah4.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/blah4.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+                <state relative-caret-position="17">
+                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -45,8 +52,8 @@
           <file leaf-file-name="TestStutter.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/TestStutter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="33" column="156" lean-forward="false" selection-start-line="33" selection-start-column="156" selection-end-line="33" selection-end-column="156" />
+                <state relative-caret-position="561">
+                  <caret line="37" column="138" lean-forward="false" selection-start-line="37" selection-start-column="138" selection-end-line="37" selection-end-column="138" />
                   <folding />
                 </state>
               </provider>
@@ -68,6 +75,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tests/blah.txt" />
+        <option value="$PROJECT_DIR$/tests/blah2.txt" />
+        <option value="$PROJECT_DIR$/tests/blah4.txt" />
         <option value="$PROJECT_DIR$/tests/TestStutter.java" />
         <option value="$PROJECT_DIR$/src/Stutter.java" />
       </list>
@@ -96,8 +105,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,6 +126,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -128,6 +137,11 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -190,6 +204,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestStutter" />
       <option name="METHOD_NAME" value="testNormalBehavior" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestStutter.unreadableFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="CPTR245HW5" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestStutter" />
+      <option name="METHOD_NAME" value="unreadableFile" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -283,16 +317,18 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TestStutter.testNormalBehavior" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TestStutter.testNewBehavior" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TestStutter" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestStutter.unreadableFile" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="JUnit.TestStutter" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestStutter.testNewBehavior" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestStutter.testNormalBehavior" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestStutter.unreadableFile" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestStutter.testNewBehavior" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestStutter.testNormalBehavior" />
       </list>
     </recent_temporary>
   </component>
@@ -332,39 +368,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestStutter - 2017.10.30 at 19h 04m 34s.xml">
+    <history-entry file="TestStutter - 2017.10.31 at 14h 07m 04s.xml">
       <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStutter - 2017.10.30 at 19h 15m 37s.xml">
+    <history-entry file="TestStutter - 2017.10.31 at 14h 09m 03s.xml">
       <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStutter - 2017.10.30 at 19h 19m 54s.xml">
+    <history-entry file="TestStutter - 2017.10.31 at 14h 09m 34s.xml">
       <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStutter - 2017.10.30 at 19h 21m 58s.xml">
+    <history-entry file="TestStutter - 2017.10.31 at 14h 09m 54s.xml">
       <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStutter - 2017.10.30 at 19h 22m 20s.xml">
+    <history-entry file="TestStutter - 2017.10.31 at 14h 11m 04s.xml">
       <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStutter - 2017.10.30 at 19h 31m 34s.xml">
+    <history-entry file="TestStutter - 2017.10.31 at 14h 11m 19s.xml">
       <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStutter - 2017.10.30 at 19h 33m 00s.xml">
+    <history-entry file="TestStutter - 2017.10.31 at 14h 15m 32s.xml">
       <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStutter_testNewBehavior - 2017.10.30 at 19h 04m 28s.xml">
-      <configuration name="TestStutter.testNewBehavior" configurationId="JUnit" />
+    <history-entry file="TestStutter - 2017.10.31 at 14h 17m 02s.xml">
+      <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStutter_testNormalBehavior - 2017.10.29 at 19h 35m 50s.xml">
-      <configuration name="TestStutter.testNormalBehavior" configurationId="JUnit" />
+    <history-entry file="TestStutter - 2017.10.31 at 14h 18m 11s.xml">
+      <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStutter_testNormalBehavior - 2017.10.30 at 11h 41m 10s.xml">
-      <configuration name="TestStutter.testNormalBehavior" configurationId="JUnit" />
+    <history-entry file="TestStutter - 2017.10.31 at 14h 18m 48s.xml">
+      <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-3" width="1924" height="1085" extended-state="6" />
+    <frame x="-2" y="-31" width="1924" height="1113" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -375,12 +411,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295688" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3203593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13958333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -405,11 +441,35 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Stutter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/blah.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestStutter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stutter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -465,14 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/blah.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/blah3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -481,18 +533,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/blah2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/blah.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/blah4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/TestStutter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="156" lean-forward="false" selection-start-line="33" selection-start-column="156" selection-end-line="33" selection-end-column="156" />
+        <state relative-caret-position="561">
+          <caret line="37" column="138" lean-forward="false" selection-start-line="37" selection-start-column="138" selection-end-line="37" selection-end-column="138" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stutter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        <state relative-caret-position="323">
+          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
           <folding />
         </state>
       </provider>
