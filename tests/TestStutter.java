@@ -27,4 +27,10 @@ public class TestStutter {
     public void NoDupes() throws IOException {
         assertEquals("not expected return", "No Duplicates", Stutter.stut("/home/charlie/School/Fall_2017/Software_Testing/HW/CPTR245HW5/tests/blah3.txt"));
     }
+
+
+    @Test
+    public void unreadableFile() throws IOException {
+        assertEquals("not expected return", "Error reading file: ", Stutter.stut("/home/charlie/School/Fall_2017/Software_Testing/HW/CPTR245HW5/tests/battery"));
+    }
 }

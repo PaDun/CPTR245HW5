@@ -30,7 +30,7 @@ public class Stutter {
                 }
             }
 
-            if(output.length() == 0){
+            if(linecnt == 0){
                 return "No Duplicates";
             }
             else {
@@ -41,6 +41,8 @@ public class Stutter {
 
         } catch (FileNotFoundException ex) {
             return String.format("File %s not found", filePath);
+        } catch (IOException ex) {
+            return String.format("Error reading file: %s", filePath);
         }
     }
  }
