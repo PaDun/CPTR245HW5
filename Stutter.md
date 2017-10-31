@@ -57,7 +57,7 @@ public static String stut(String filePath) {
 
 We can now open the file and read a line, but our test will still fail as we haven't yet gotten rid of our hard-coded return. Parsing the string sounds like it could be useful here. To do so, we'll use the string split method and a regular expression.
 ```java
-public static String stut(String filePath) throws IOException {
+public static String stut(String filePath) {
         FileReader fr = new FileReader(filePath);
         BufferedReader br = new BufferedReader(fr);
         String line;
