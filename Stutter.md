@@ -159,7 +159,7 @@ Then, to implement so it passes.
  } catch (FileNotFoundException ex) {
             return String.format("File %s not found", filePath);
  }
- 
+ ```
 Everything's passing, now for the refactoring step. Let's look at the whole code again.
 
 ```java
