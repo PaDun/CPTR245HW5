@@ -6,8 +6,9 @@ The functionality we decided to recreate using TDD was the Stutter program, whic
 
 ```java
   @Test
-    public void testNormalBehavior() throws IOException {
-        assertEquals("Not expected return","nibh ln 7, nostra ln 11, ",Stutter.stut("/home/charlie/School/Fall_2017/Software_Testing/HW/CPTR245HW5/tests/blah.txt"));
+    public void testNormalBehavior() {
+        //For the sake of both brevity and privacy, the full file paths will be omitted.
+        assertEquals("Not expected return","nibh ln 7, nostra ln 11, ",Stutter.stut("blah.txt"));
     }
 ```
 
@@ -29,7 +30,7 @@ public class Stutter {
 }
 ```
 
-Of course, this implementation doesn't quite capture the functionality we're looking for, so let's make another test (with another omitted file).
+Of course, this implementation doesn't quite capture the functionality we're looking for, so let's make another test.
 ```java
  @Test
     public void testNewBehavior() {
@@ -93,8 +94,65 @@ Here, split takes a string, and splits it based on a delimiter, which the regula
             }
         }
     }
+        output = output.substring(0, output.length() - 2); //to get rid of the annoying ", " at the end of the string.
         return output;
     }
 ```
-Hooray, our tests are passing! Unfortunately, we still have some problems on our list.
+Hooray, our tests are passing! Unfortunately, we still have some problems to address. For one, suppose the file we feed it doesn't contain any duplicates. First, let's make a test for it.
+
+```java
+      @Test
+    public void NoDupes() {
+        assertEquals("not expected return", "No Duplicates", Stutter.stut("blah3.txt"));
+}
+```
+It doesn't pass, as we'd expect, but it should be a simple implementation. Checking that the length of the output is zero should do well as a check for a lack of duplicates.
+
+```java
+            if(output.length() == 0){
+                return "No Duplicates";
+}
+```
+Alright, back to green. Just out of curiosity, if we feed it a file with nothing but delimiters, what do we get? I'd assume No Duplicates, but let's check anyway.
+
+```java
+    @Test
+    public void noWordsAndDemlimiters() {
+        assertEquals("not expected return", "No Duplicates", Stutter.stut("blah4.txt"));
+}
+```
+It does. Good! While we're on unusual files, though, what if we try feeding it a file that isn't .txt? This calls for a new test!
+
+```java
+    @Test
+    public void notATextFile() {
+        assertEquals("not expected return", "1753.png is not a txt file", Stutter.stut("1753.png"));
+}
+```
+Off the record, we struggled for a long time to figure out how we wanted to implement this. We'll spare you that story, though, and instead give the implementation we decided on, which was probably one of the simpler options we could've come up with.
+
+```java
+    public static String stut(String filePath) {
+        if(!filePath.substring(filePath.length()-4,filePath.length()).equals(".txt")) {
+            return String.format("%s is not a txt file", filePath);
+}
+```
+Green. Just one more check before I think we can call the program functionally adequate: let's feed it a file that doesn't exist.
+
+```java
+     @Test
+    public void fileDoesNotExist() {
+        assertEquals("not expected return", "File junk.txt not found", Stutter.stut("junk.txt"));
+}
+```
+Then, to implement so it passes. 
+
+```java
+ try {
+ //code for the program
+ } catch (FileNotFoundException ex) {
+            return String.format("File %s not found", filePath);
+ }
+ 
+Everything's passing, now for the refactoring step. Let's look at the whole code again.
 
