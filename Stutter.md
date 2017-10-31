@@ -39,7 +39,7 @@ Of course, this implementation doesn't quite capture the functionality we're loo
 ```
 
 *Gasp!* We have broken the function tests again. Well, guess it's time to move towards a more useful implementation.
-So, first we need to open the file we put in, and read from it. Using FileReader and BufferedReader seems like a sensible idea. While we're at it, perhaps it's cheating a bit, but let's add a line counter system as well, since we'll need one anyway.
+So, first we need to open the file we put in, and read from it. Using FileReader and BufferedReader seems like a sensible idea. While we're at it, perhaps it's skipping a bit, but let's add a line counter system as well, since we'll need one anyway.
 ```java
 public static String stut(String filePath) {
         FileReader fr = new FileReader(filePath);
