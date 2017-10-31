@@ -2,9 +2,7 @@
 ### CPTR 245
 ### Patrick Dunphy & Charles Lambert
 
-Our initial happy path tests sets up the main funcitonality of the program.
-Which in this case is to read a file and check for repeated words.
-Once repeated words are found it returns the words and lines.
+The functionality we decided to recreate using TDD was the Stutter program, which takes a file, and returns a string listing duplicate words and the line number they were on (For the sake of simplicity, we're omitting the custom files we made to test with). To start, we made a test checking that we get a string back listing the duplicated word, and the line (ln) that it appears on.
 
 ```java
   @Test
@@ -13,13 +11,13 @@ Once repeated words are found it returns the words and lines.
     }
 ```
 
-As one would expect we get an error because the implementation does not exist.
+Shockingly, the test fails, as we have no implementation past the header.
 ```java
 public class Stutter {
 }
 ```
 
-So lets make a basic implementation that fakes the result.
+So, from there, we faked it. As you do.
 ```java
 public class Stutter {
     public Stutter() {
@@ -31,7 +29,7 @@ public class Stutter {
 }
 ```
 
-Now obviously this implementation does not capture the real functionality we are looking for, so lets make another test.
+Of course, this implementation doesn't quite capture the functionality we're looking for, so let's make another test (with another omitted file).
 ```java
  @Test
     public void testNewBehavior() {
@@ -39,8 +37,8 @@ Now obviously this implementation does not capture the real functionality we are
     }
 ```
 
-Oh we have broken the function tests again so lets make a real implementation.
-First we need to open a file and read from it. In java we use a FileReader and a BufferReader.
+*Gasp!* We have broken the function tests again. Well, guess it's time to move towards a more useful implementation.
+So, first we need to open the file we put in, and read from it. Using FileReader and BufferedReader seems like a sensible idea. While we're at it, perhaps it's cheating a bit, but let's add a line counter system as well, since we'll need one anyway.
 ```java
 public static String stut(String filePath) {
         FileReader fr = new FileReader(filePath);
@@ -56,8 +54,7 @@ public static String stut(String filePath) {
     }
 ```
 
-So now we can open the file and read a line but our test will still fail so lets parse the line.
-To do so we will use the string split method and a regular expression.
+We can now open the file and read a line, but our test will still fail as we haven't yet gotten rid of our hard-coded return. Parsing the string sounds like it could be useful here. To do so, we'll use the string split method and a regular expression.
 ```java
 public static String stut(String filePath) throws IOException {
         FileReader fr = new FileReader(filePath);
@@ -73,8 +70,7 @@ public static String stut(String filePath) throws IOException {
         return "nibh ln 7, nostra ln 11";
     }
 ```
-In this case split takes a string and splits it based on a delimiter, which we used a regular expression to catch all non word groupings.
-And unfortunatly our tests still don't pass. Now we need check for duplicates in the line.
+Here, split takes a string, and splits it based on a delimiter, which the regular expression provides. We still have yet to purge the hard-coded return, though, but now we should be prepared to tackle it.
 
 ```java
     String line;
@@ -100,5 +96,5 @@ And unfortunatly our tests still don't pass. Now we need check for duplicates in
         return output;
     }
 ```
-And finally our happy path test is functional, but we missed a few things along the way.
+Hooray, our tests are passing! Unfortunately, we still have some problems on our list.
 
