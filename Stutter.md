@@ -112,6 +112,12 @@ It doesn't pass, as we'd expect, but it should be a simple implementation. Check
             if(output.length() == 0){
                 return "No Duplicates";
 }
+            else {
+                //code to cut ", "
+                }
+                
+            return output;
+                
 ```
 Alright, back to green. Just out of curiosity, if we feed it a file with nothing but delimiters, what do we get? I'd assume No Duplicates, but let's check anyway.
 
@@ -156,3 +162,203 @@ Then, to implement so it passes.
  
 Everything's passing, now for the refactoring step. Let's look at the whole code again.
 
+```java
+import java.io.*;
+
+public class Stutter {
+    public Stutter() {
+    }
+
+
+    public static String stut(String filePath) {
+        if(!filePath.substring(filePath.length()-4,filePath.length()).equals(".txt")) {
+            return String.format("%s is not a txt file", filePath);
+        }
+
+        try {
+            FileReader fr = new FileReader(filePath);
+            BufferedReader br = new BufferedReader(fr);
+
+            String line;
+            String output = "";
+            String[] lineArray;
+            int linecnt = 0;
+            String prevW;
+
+            while ((line = br.readLine()) != null) {
+                ++linecnt;
+                lineArray = line.split("\\W+");
+
+                if (lineArray.length != 0) {
+                    prevW = lineArray[0];
+                    for (int i = 1; i < lineArray.length; i++) {
+                        if (lineArray[i].equals(prevW)) {
+                            output = output + String.format("%s ln %d, ", lineArray[i], linecnt);
+                            prevW = lineArray[i];
+                        } else {
+                            prevW = lineArray[i];
+                        }
+                    }
+                }
+            }
+
+            if(output.length() == 0){
+                return "No Duplicates";
+            }
+            else {
+                output = output.substring(0, output.length() - 2);
+            }
+
+            return output;
+
+        } catch (FileNotFoundException ex) {
+            return String.format("File %s not found", filePath);
+        } catch (IOException ex) { //We have this more for good form than anything. We understand it goes against the "you
+                                   //ain't gonna need it" mentality, but we couldn't help it.
+             return String.format("Error reading file: %s", filePath);
+        }
+    }
+}
+```
+Not exactly the prettiest code to look at. I feel some parts of this could be consolidated into their own methods. Let's tinker with it a bit. For one, the check for the .txt could probably be its own small method, so let's do that.
+
+```java
+         if(!isTextFile(filePath)) {
+             return String.format("%s is not a txt file", filePath);
+         }
+         //code
+         private static boolean isTextFile(String filePath) {
+         return filePath.substring(filePath.length()-4,filePath.length()).equals(".txt");
+   }
+   ```
+   The while loop parsing the string could probably be broken into a couple methods as well. So, let's try it.
+   
+   ```java
+               while ((line = br.readLine()) != null) {
+                 ++linecnt;
+                 lineArray = getWords(line);
+                 if (noWords(lineArray)) {
+                    output = getDuplicates(output, lineArray, linecnt);
+                 }
+               }
+               //code
+               private static String[] getWords(String line) {
+                 String[] lineArray;
+                 lineArray = line.split("\\W+");
+                 return lineArray;
+               }
+               
+               private static boolean noWords(String[] lineArray) {
+                 return lineArray.length != 0;
+               }
+               
+               private static String getDuplicates(String output, String[] lineArray, int linecnt) {
+                 String prevW = lineArray[0];
+                 for (int i = 1; i < lineArray.length; i++) {
+                   if (lineArray[i].equals(prevW)) {
+                     output = output + String.format("%s ln %d, ", lineArray[i], linecnt);
+                     prevW = lineArray[i];
+                   } else {
+                     prevW = lineArray[i];
+                   }
+                 }
+                 return output;
+               }
+```
+It could just be nitpicking at this point, but let's turn the check for an empty output and the cleaning-up of a proper one into methods as well. 
+
+```java
+               if(outputEmpty(output)) {
+                 output = "No Duplicates";
+               }
+               else {
+                 output = cleanUpOutput(output);
+               }
+               //code
+               private static boolean outputEmpty(String output) {
+                 return output.length() == 0;
+               }
+               private static String cleanUpOutput(String output) {
+                 output = output.substring(0, output.length() - 2);
+                 return output;
+               }
+```
+And everything still works! So, we have a newly-cleaned, better-organized program than we did before, and it still works as we'd expect. I'd say, overall, this venture into TDD wasn't so bad. (Looking at the last snippet again, I could realistically see it condensed into a single method, but we've only got so much time, so we'll leave it as is.) Let's take one more look at our newly refactored Stutter code, to reminesce.
+```java
+    public static String stut(String filePath) {
+        if(!isTextFile(filePath)) {
+            return String.format("%s is not a txt file", filePath);
+        }
+
+        try {
+            FileReader fr = new FileReader(filePath);
+            BufferedReader br = new BufferedReader(fr);
+
+            String line;
+            String output = "";
+            String[] lineArray;
+            int linecnt = 0;
+
+            while ((line = br.readLine()) != null) {
+                ++linecnt;
+                lineArray = getWords(line);
+
+                if (noWords(lineArray)) {
+                    output = getDuplicates(output, lineArray, linecnt);
+                }
+            }
+
+            if(outputEmpty(output)) {
+                output = "No Duplicates";
+            }
+            else {
+                output = cleanUpOutput(output);
+            }
+
+            return output;
+
+        } catch (FileNotFoundException ex) {
+            return String.format("File %s not found", filePath);
+        } catch (IOException ex) {
+            return String.format("Error reading file: %s", filePath);
+        }
+    }
+
+    private static String cleanUpOutput(String output) {
+        output = output.substring(0, output.length() - 2);
+        return output;
+    }
+
+    private static boolean noWords(String[] lineArray) {
+        return lineArray.length != 0;
+    }
+
+    private static boolean isTextFile(String filePath) {
+        return filePath.substring(filePath.length()-4,filePath.length()).equals(".txt");
+    }
+
+    private static boolean outputEmpty(String output) {
+        return output.length() == 0;
+    }
+
+    private static String[] getWords(String line) {
+        String[] lineArray;
+        lineArray = line.split("\\W+");
+        return lineArray;
+    }
+
+    private static String getDuplicates(String output, String[] lineArray, int linecnt) {
+        String prevW = lineArray[0];
+
+        for (int i = 1; i < lineArray.length; i++) {
+            if (lineArray[i].equals(prevW)) {
+                output = output + String.format("%s ln %d, ", lineArray[i], linecnt);
+                prevW = lineArray[i];
+            } else {
+                prevW = lineArray[i];
+            }
+        }
+        return output;
+}
+```
+Hope this was a satisfactory description of how we did our TDD. Have a good day!
