@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f765742a-ff50-4218-be46-40ec7d063281" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/blah4.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/CPTR245HW5/battery" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/battery" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CPTR245HW5/Stutter.class" afterPath="$PROJECT_DIR$/out/production/CPTR245HW5/Stutter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/CPTR245HW5/TestStutter.class" afterPath="$PROJECT_DIR$/out/test/CPTR245HW5/TestStutter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/CPTR245HW5/blah2.txt" afterPath="$PROJECT_DIR$/out/test/CPTR245HW5/blah2.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Stutter.java" afterPath="$PROJECT_DIR$/src/Stutter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestStutter.java" afterPath="$PROJECT_DIR$/tests/TestStutter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/blah2.txt" afterPath="$PROJECT_DIR$/tests/blah2.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,9 +21,14 @@
           <file leaf-file-name="Stutter.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Stutter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-                  <folding />
+                <state relative-caret-position="170">
+                  <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#1390#1391#0" expanded="true" />
+                    <element signature="e#1434#1435#0" expanded="true" />
+                    <element signature="e#1644#1645#0" expanded="true" />
+                    <element signature="e#1687#1688#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -137,6 +135,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -364,28 +363,17 @@
       <option name="project" value="LOCAL" />
       <updated>1509416636245</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added tests and implementation for non txt files and nearly empty files">
+      <created>1509484820935</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1509484820935</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestStutter - 2017.10.31 at 14h 07m 04s.xml">
-      <configuration name="TestStutter" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestStutter - 2017.10.31 at 14h 09m 03s.xml">
-      <configuration name="TestStutter" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestStutter - 2017.10.31 at 14h 09m 34s.xml">
-      <configuration name="TestStutter" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestStutter - 2017.10.31 at 14h 09m 54s.xml">
-      <configuration name="TestStutter" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestStutter - 2017.10.31 at 14h 11m 04s.xml">
-      <configuration name="TestStutter" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestStutter - 2017.10.31 at 14h 11m 19s.xml">
-      <configuration name="TestStutter" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestStutter - 2017.10.31 at 14h 15m 32s.xml">
       <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
@@ -396,6 +384,24 @@
       <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestStutter - 2017.10.31 at 14h 18m 48s.xml">
+      <configuration name="TestStutter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStutter - 2017.10.31 at 14h 23m 23s.xml">
+      <configuration name="TestStutter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStutter - 2017.10.31 at 14h 26m 00s.xml">
+      <configuration name="TestStutter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStutter - 2017.10.31 at 14h 27m 18s.xml">
+      <configuration name="TestStutter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStutter - 2017.10.31 at 14h 28m 51s.xml">
+      <configuration name="TestStutter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStutter - 2017.10.31 at 14h 30m 52s.xml">
+      <configuration name="TestStutter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStutter - 2017.10.31 at 14h 35m 05s.xml">
       <configuration name="TestStutter" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -411,7 +417,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3203593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3203593" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -437,7 +443,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working with happy path tests" />
     <MESSAGE value="Added tests for file and empty file exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests for file and empty file exceptions" />
+    <MESSAGE value="Added tests and implementation for non txt files and nearly empty files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests and implementation for non txt files and nearly empty files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -450,7 +457,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-          <folding />
+          <folding>
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -474,7 +486,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -498,7 +515,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding />
+          <folding>
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -567,9 +589,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stutter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="51" lean-forward="false" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
